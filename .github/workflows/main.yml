@@ -1,8 +1,16 @@
-- name: GitHub Action Deploy to WP Engine
-
+name: Deploy to WP Engine
+on:
+  push:
+    branches:
+     - main
+jobs:
+  build:
+    runs-on: ubuntu-latest  
+    steps: 
+    - uses: actions/checkout@v3
+    - name: GitHub Action Deploy to WP Engine
       uses: wpengine/github-action-wpe-site-deploy@v3
       with:
-      # Deploy vars
-        WPE_SSHG_KEY_PRIVATE: ${{ secrets.WPE_SSHG_KEY_PRIVATE }}
-        STG_ENV: "brewseeker2"
-        REMOTE_PATH: "wp-content/themes/genesis-child-theme/"
+        WPE_SSHG_KEY_PRIVATE: ${{ secrets.WPE_SSHG_KEY_PRIVATE }} 
+        STG_ENV: brewseeker2
+	REMOTE_PATH: "wp-content/themes/client/"
