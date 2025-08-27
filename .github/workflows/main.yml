@@ -12,5 +12,5 @@ jobs:
       uses: wpengine/github-action-wpe-site-deploy@v3
       with:
         WPE_SSHG_KEY_PRIVATE: ${{ secrets.WPE_SSHG_KEY_PRIVATE }} 
-        STG_ENV: brewseeker2
+        STG_ENV: "brewseeker2"
 	REMOTE_PATH: "wp-content/themes/client/"
