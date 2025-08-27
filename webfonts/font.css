@@ -1,0 +1,21 @@
+@font-face {
+  font-family: "Increments";
+  src:
+    url("IIIncrementsSans-Medium.woff2") format("woff2"),
+    url("IIIncrementsSans-Medium.woff") format("woff")
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Season";
+  src:
+    url("SeasonMix-Regular.woff2") format("woff2"),
+    url("SeasonMix-Regular.woff") format("woff")
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  font-display: swap;
+}
