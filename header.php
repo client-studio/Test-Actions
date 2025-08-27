@@ -8,7 +8,7 @@
    </head>
 
    <body <?php body_class( 'antialiased bg-light min-h-dvh' ); ?>>
-      <div id="page" class="min-h-screen" x-data="header()" x-init="init()" x-effect="effect()">
+      <div id="page" class="min-h-screen test" x-data="header()" x-init="init()" x-effect="effect()">
 
          <header class="site-header w-full fixed left-0 top-0 z-50 transition-transform duration-300 ease-linear"
             :class="{ '-translate-y-full': scroll_direction === 'down', 'translate-y-0': scroll_direction === 'up' }">
